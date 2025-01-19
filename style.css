@@ -1,0 +1,202 @@
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: rgb(223, 169, 169);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+div{
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: rgb(169, 223, 216);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+section u {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: rgb(223, 169, 169);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+section u {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: rgb(53, 40, 40);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+div img {
+    max-width: 50%;
+    border-radius: 8px;
+}
+section img {
+    max-width: 50%;
+    border-radius: 8px;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/*\ .contact-form button {
+    padding: 0.7rem 1.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; */
+/* } */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.icons i {
+    color: #333;
+}
+
+
+/* General Styling for Form Container */
+.form-container {
+    background: linear-gradient(135deg, #74b9ff, #a29bfe); /* Beautiful gradient background */
+    max-width: 600px;           /* Limit width for readability */
+    margin: 50px auto;          /* Center the container */
+    padding: 30px 40px;         /* Add spacing inside the container */
+    border-radius: 15px;        /* More rounded corners for a modern look */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clean font for text */
+    color: #fff;               /* White text for better contrast */
+    position: relative;        /* For decorative pseudo-elements */
+    overflow: hidden;          /* Hide overflow for effects */
+}
+
+/* Decorative Background Effects */
+.form-container::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%; /* Circular shape */
+    z-index: 0; /* Behind the form */
+    animation: float 6s infinite ease-in-out; /* Subtle floating animation */
+}
+
+.form-container::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 0;
+    animation: float 8s infinite ease-in-out reverse;
+}
+
+/* Keyframe for Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Heading Styling */
+.form-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1; /* Above the pseudo-elements */
+    position: relative;
+}
+
+/* Label Styling */
+.form-container label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 8px;
+    z-index: 1;
+    position: relative;
+}
+
+/* Input and Textarea Styling */
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    color: #333; /* Dark text inside inputs */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    z-index: 1;
+    position: relative;
+}
+
+/* Highlight Input on Focus */
+.form-container input:focus,
+.form-container textarea:focus {
+    background: #fff; /* Fully white background */
+    border: 2px solid #6c5ce7; /* Highlight with purple border */
+}
+
+/* Button Styling */
+.form-container button {
+    background: #6c5ce7; /* Vivid purple */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 25px; /* Rounded button */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.form-container button:hover {
+    background: #341f97; /* Darker purple */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .form-container h1 {
+        font-size: 2rem;
+    }
+}

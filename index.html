@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #868691;
+        }
+        header {
+            height: 100px;
+            background-color: #333333;
+            color: rgb(255, 251, 251);
+            padding: 1rem 2rem;
+            text-align: center;
+    
+        }
+        
+
+        nav {
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+            padding: 8.5px;
+            background-color: rgb(201, 240, 240);
+        
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: rgb(223, 169, 169);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        div{
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: rgb(169, 223, 216);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        section u {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: rgb(223, 169, 169);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        section u {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: rgb(53, 40, 40);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        div img {
+            max-width: 50%;
+            border-radius: 8px;
+        }
+        section img {
+            max-width: 50%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        /* .contact-form button {
+            padding: 0.7rem 1.5rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer; */
+        /* } */
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+        .icons i {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#work">Work Samples</a>
+        <a href="#Contact Us">Contact Us</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm a passionate developer skilled in web and software development. I enjoy creating efficient and elegant solutions to complex problems.</p>
+        <img src="./2577353.jpg" alt="About Me">
+        <div class="icons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+        </div>
+    </section>
+
+    <div u id="work">
+        <h2>Work Samples</h2>
+        <div>
+            <h3>Project 1</h3>
+            <img src="./2199147.jpg" alt="Project 1">
+            <p>Description of Project 1 goes here.</p>
+        </div>
+        <div>
+            <h3>Project 2</h3>
+            <img src="https://img.freepik.com/premium-photo/editor-working-photos-creative-office_107420-46823.jpg?ga=GA1.1.1101775813.1731342411&semt=ais_incoming" alt="Project 2">
+            <p>Description of Project 2 goes here.</p>
+        </div>
+    </div>
+    <div class="form-container">
+
+        <h1>Contact Us</h1>
+      
+      
+        <div action="/submit" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+      
+          <button onclick="sendForm() ">Send Message</button>
+        </div>
+      </div>
+    
+    <footer>
+        <p>&copy; 2025 Developer Portfolio. All rights reserved.</p>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="./app.js"></script>
+</body>
+</html>
